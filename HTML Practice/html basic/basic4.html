@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practice</title>
+    </head>
+    <body>
+        <div>
+            <h2>To define a inline frame</h2>
+            <iframe src="https://www.w3resource.com/html-css-exercise/basic/solution/iframe-sandbox.html" height="450" width="500" sandbox><!-- Inline frame element displaying content from an external source with sandbox attribute enabled -->
+            </iframe>
+
+            <iframe src="https://www.w3resource.com/html-css-exercise/basic/solution/article-answer.html" name ="iframe_a"><!-- Inline frame element displaying content from an external source with the name attribute set to "iframe_a" -->
+            </iframe><!-- Closing tag for the iframe element -->
+            <a href="https://www.w3resource.com/html-css-exercise/basic/solution/article-answer.html" target="iframe_a">w3resource</a><!-- Anchor element linking to an external URL with the target attribute set to "iframe_a" -->
+        
+            <iframe srcdoc="<p>w3resource</p>" src="https://www.w3resource.com/html-css-exercise/basic/solution/html-answer.html"><!-- Inline frame element specifying HTML content to display with srcdoc attribute and URL of the document as a fallback -->
+            </iframe>
+        </div>
+        <hr>
+        <div>
+            <h2>Using image tag</h2>
+            <img  
+              src="https://www.w3resource.com/images/w3resource-logo.png" 
+              alt="html img src tag example" 
+              width="50%" height="50"
+              longdesc="w3r.txt"><!-- URL to a detailed description of the image -->
+        </div>
+        <div>
+            <h2>to specify an image as a server-side image-map</h2>
+            <a href="area.map"><!-- Anchor element linking to the server-side image map file (area.map) -->
+                <img src="https://www.w3resource.com/w3r_images/html-area-element.png" alt="area example " width="308" height="190" border="0" usemap="#Map"><!-- Image element specifying the source URL of the image, alternate text, dimensions, border, and associated server-side image map -->
+                <map name="Map"><!-- Server-side image map definition with the name attribute "Map" -->
+                <area shape="rect" coords="8,5,100,77" href="https://www.w3resource.com/mysql/mysql-tutorials.php" target="_blank" alt="mysql tutorial"><!-- Area element defining a rectangular clickable region with coordinates, target URL, and alternate text -->
+                <area shape="circle" coords="155,93,59" href="https://www.w3resource.com/php/php-home.php" target="_blank" alt="php tutorial"><!-- Area element defining a circular clickable region with coordinates, target URL, and alternate text -->
+                <area shape="rect" coords="197,136,306,188" href="https://www.w3resource.com/sql/sql-tutorials.php" alt="sql tutorials"><!-- Area element defining a rectangular clickable region with coordinates, target URL, and alternate text -->
+                </map><!-- Closing tag for the server-side image map -->
+        </div>
+        <div>
+            <h2>to specify an image as a client-side image-map</h2>
+            <img 
+               src="https://www.w3resource.com/w3r_images/html-area-element.png" alt="area example" 
+               width="308" height="190" border="0" usemap="#Map"><!-- Attribute associating the image with the client-side image map named "Map" -->
+            <map name="Map"><!-- Definition of the client-side image map with the name attribute "Map" -->
+                 <area shape="rect" coords="8,5,100,77" href="https://www.w3resource.com/mysql/mysql-tutorials.php" target="_blank" alt="mysql tutorial"><!-- Area element defining a rectangular clickable region with coordinates, target URL, and alternate text -->
+                 <area shape="circle" coords="155,93,59" href="https://www.w3resource.com/php/php-home.php" target="_blank" alt="php tutorial"><!-- Area element defining a circular clickable region with coordinates, target URL, and alternate text -->
+                 <area shape="rect" coords="197,136,306,188" href="https://www.w3resource.com/sql/sql-tutorials.php" alt="sql tutorials"><!-- Area element defining a rectangular clickable region with coordinates, target URL, and alternate text -->
+            </map><!-- Closing tag for the client-side image map -->
+            
+        </div>
+    </body>
+</html>

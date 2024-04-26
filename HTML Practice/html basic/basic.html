@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Basic</title>
+    </head>
+    <body>
+        <!--this is a comment-->
+        <p><a href="https://www.w3resource.com/">w3resource.com</a></p>
+        <!--hyperlink with download which will be downloaded when user click on it-->
+        <p><a href="https://www.w3resource.com/images/w3resource-log.png" download>Download</a></p>
+        <!--hyperlink with its language-->
+        <p><a href="https://www.w3resource.com/" hreflang="en">w3resource.com</a></p>
+        <p><a href="#div1">go to div1</a></p>
+        <div id="div1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Laborum eius, totam facilis mollitia eveniet quaerat quibusdam tempore eligendi incidunt explicabo hic accusamus tenetur aliquid,
+             cum obcaecati ullam ex aut maxime.
+        </div>
+        <p><a href="https://www.w3resource.com/" media="print, handheld">w3resource.com</a></p>
+        <!--nofollow link-->
+        <p><a href="https://www.w3resource.com/" rel="nofollow">w3resource.com</a></p>
+        <!--link which open in new tab-->
+        <p><a href="https://www.w3resource.com/" target="_blank">w3resource.com</a></p><hr>
+        <div>
+            <abbr title="Uniform Resource Locator">URL</abbr>
+        </div>
+        <div>
+            <address>
+                name: barsharani palei<br>
+                AT: Banaparia<br>
+                City: Balasore<br>
+                Dist: Odisha<br>
+            </address><br><br>
+            <h3>to create an area inside a image-map</h3>
+            <!--to create an area inside a image-map-->
+            <img src="https://www.w3resource.com/html/area/html-area-element.png" alt="area example" width="308" height="190" border="0" usemap="#Map">
+            <map>
+                <area  shape="rect" coords="8,5,100,77" href="https;//www.w3resource.com/mysql/mysql-tutorials.php" media="print,handheld" target="_blank" alt="mysql tutorial">
+                <area  shape="circle" coords="155,93,59" href="https;//www.w3resource.com/php/php-home.php" hreflang="en" target="_self" alt="php tutorial" rel="alternate" download>
+            </map>
+        </div>
+        <hr><br>
+        <div>
+            <h3>using article and aside tag</h3>
+            <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, perspiciatis!</article>
+            <aside>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, sed?</aside>
+        </div><br>
+
+        <div>
+            <h3>using audio tag</h3>
+            <audio controls="controls" muted>
+              <source src="https://www.w3resource.com/html-css-exercise/basic/solution/beach.ogg" type="audio/ogg">
+              <source src="https://www.w3resource.com/html-css-exercise/basic/solution/beach.mp3" type="audio/mpeg">
+            </audio><br>
+
+            <audio controls="controls" autoplay >
+                <source src="https://www.w3resource.com/html-css-exercise/basic/solution/beach.ogg" type="audio/ogg">
+                <source src="https://www.w3resource.com/html-css-exercise/basic/solution/beach.mp3" type="audio/mpeg" >
+              </audio><br>
+
+              <audio controls="controls" loop >
+                <source src="https://www.w3resource.com/html-css-exercise/basic/solution/beach.ogg" type="audio/ogg">
+                <source src="https://www.w3resource.com/html-css-exercise/basic/solution/beach.mp3" type="audio/mpeg" >
+              </audio><br>
+
+              <audio controls="controls" preload="auto">
+                <source src="https://www.w3resource.com/html-css-exercise/basic/solution/beach.ogg" type="audio/ogg">
+                <source src="https://www.w3resource.com/html-css-exercise/basic/solution/beach.mp3" type="audio/mpeg" >
+              </audio><br>
+              <b>End of using audio tag</b><br>
+            </p>
+            <h3>using bdi tag</h3>
+             <ul>
+               <li>User <bdi>hrefs</bdi>: 40 points</li>
+               <li>User <bdi>jdoe</bdi>: 60 points</li>
+               <li>User <bdi>ترحيب</bdi>:80 points</li>
+             </ul>
+             <h3>using bdo tag</h3>
+             <bdo dir="ltr">what are you doing?</bdo><br>
+             <bdo dir="rtl">what are you doing?</bdo>
+            <p>
+                <p>
+                    <h3>using blockquote tag</h3>
+                    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Atque minima totam nesciunt voluptatum minus facilis,
+                    iusto, dolorum maiores placeat vitae modi! Ab non delectus dignissimos nostrum? Numquam laborum blanditiis sunt.
+                    </blockquote>
+                </p>
+             <div>
+                <h3>using button </h3>
+                <button type="button" onclick="console.log('welcome')">Click</button><br>
+                <button type="button" autofocus onclick="console.log('welcome Miss Barsha')">Click Me!</button><br>
+                <button type="submit" name="submit" disabled>Submit</button><br>
+                <h2>FORM 1</h2>
+                <form method="POST" 
+                action="https://www.w3resource.com/html-css-exercise/basic/solution/button-form-answer-demo.php" id="form1">
+                         First   name  : <input type="text" name="fname"><br>
+                         Last    name : <input type="text" name="lname"><br>
+                         Present Address : <input type="text" name="add"><br>
+                         E-mail  : <input type="text" name="mail"><br>
+                         <button type="submit"  form="form1"  value="Submit">Submit</button>
+                </form><br><br>
+                
+                <div>
+                    <h2>FORM 2</h2>
+                    <form action="https://www.w3resource.com/html-css-exercise/basic/solution/button-formaction-
+                    answer-demo.php" method="post">
+                        First name: <input type="text" name="fname"><br>
+                        Last name: <input type="text" name="lname"><br>
+                        <button type="submit">Submit</button><br>
+                        <button type="submit" formaction="https://www.w3resource.com/html-css-
+                        exercise/basic/solution/button-formaction-admin-demo.php">Submit as admin</button>
+                    </form>
+                </div><br><br>
+                <div>
+                    <h2>FORM 3</h2>
+                    <form action="https://www.w3resource.com/html-css-exercise/basic/solution/button-formenctype.php" method="post">
+                        name: <input type="text" name="name"><br>
+                        email: <input type="email" name="email"><br> 
+                        <button name="Submit" type="submit" formenctype="text/plain">Submit</button>
+                    </form>
+                </div><br><br>
+                <div>
+                    <h2>FORM 4</h2>
+                    <form action="https://www.w3resource.com/html-css-exercise/basic/solution/button-formmethod-answer-demo.php">
+                        First name: <input type="text" name="fname"><br>
+                        Last name: <input type="text" name="lname"><br>
+                        Address: <input type="text" name="place"><br>
+                        <button type="submit">Submit</button>
+                        <button type="submit" formmethod="post" formaction="http://localhost/html-css-exercise/basic/solution/button-formmethod-post-answer.php">Submit using POST</button>
+                      </form>
+                </div>
+             </div>   
+        </div>
+    </body>
+</html>
